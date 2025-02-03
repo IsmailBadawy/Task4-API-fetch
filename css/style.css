@@ -5,85 +5,92 @@
 }
 
 :root {
-    --grayColor: #888888;
-    --bodyColor: #fcfcfc;
-    --whiteColor: white;
+    --grayColor: #888;
+    --bodyColor: linear-gradient(45deg, #9ad7ff, #9bade9, #6dafdb, #6862c7);
+    --whiteColor: #f4f6ff;
     --darkColor: black;
+    --babyBlueColor: #4288ca;
+    --lightBabyBlueColor: #549adb;
+
 }
 
 body {
-    background-color: var(--bodyColor);
+    background-color: var(--whiteColor);
+}
+
+.container-log {
+    height: 100vh;
+
 
 }
 
-.head {
-    height: 150px;
-}
-
-.search-box {
-    max-width: 800px;
-}
-
-.search-box i {
-    right: 150px;
-    color: var(--grayColor);
-    pointer-events: none;
-}
-
-@media (max-width: 500px) {
-
-    .search-box i {
-        right: 100px;
-        font-size: 14px;
-
-    }
-
-    .search-box input {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 300px) {
-
-    .search-box i {
-        display: none;
-    }
-}
-
-.cart {
-    position: relative;
-}
-
-.cart .num {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 10px;
-    left: 18px;
-    box-shadow: 0 0 10px var(--darkColor);
-    opacity: 0.89;
+.log {
+    width: 60%;
     color: var(--whiteColor);
-    margin: auto;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-}
-.card{
-    overflow: hidden;
-}
-.card img {
-    transition:  0.5s ease;
+    padding: 20px 0 50px 0;
+    border: 1px solid var();
+    text-align: center;
+    border-radius: 15px;
+    background: var(--bodyColor);
 }
 
-.card img:hover {
-    transform: scale(1.2);
+@media(max-width:700px) {
+
+    .log {
+        width: 100%;
+    }
 }
-.top{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    padding: 10px;
-    cursor: pointer;
+
+.log h2 {
+    text-shadow: 0 0 10px var(--whiteColor);
+}
+
+
+
+.log h1 {
+    padding: 20px 50px;
+    border-bottom: 1px solid var(--lightBabyBlueColor);
+    color: var(--whiteColor);
+    text-shadow: 0 0 10px var(--darkColor);
+
+}
+
+form {
+    width: 60%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.small {
+    margin-right: 60%;
+    font-size: 12px;
+    color: var(--grayColor);
+    line-height: 0px;
+}
+
+@media(max-width:1200px) {
+
+    form .small {
+        margin-right: 0%;
+    }
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid var(--babyBlueColor);
+
+}
+
+form .logLink {
+    width: 100%;
+    background-color: var(--babyBlueColor);
+    letter-spacing: 3px;
+    color: var(--whiteColor);
+    transition: 0.3s;
+}
+
+form .logLink:hover {
+    background-color: var(--lightBabyBlueColor);
+    color: var(--whiteColor);
 
 }
