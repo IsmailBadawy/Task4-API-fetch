@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --grayColor: #888;
+    --bodyColor: linear-gradient(45deg, #9ad7ff, #9bade9, #6dafdb, #6862c7);
+    --whiteColor: #f4f6ff;
+    --darkColor: black;
+    --babyBlueColor: #4288ca;
+    --lightBabyBlueColor: #549adb;
+
+}
+
+body {
+    background-color: var(--whiteColor);
+}
+
+.container-log {
+    height: 100vh;
+
+
+}
+
+.log {
+    width: 60%;
+    color: var(--whiteColor);
+    padding: 20px 0 50px 0;
+    border: 1px solid var();
+    text-align: center;
+    border-radius: 15px;
+    background: var(--bodyColor);
+}
+
+@media(max-width:700px) {
+
+    .log {
+        width: 100%;
+    }
+}
+
+.log h2 {
+    text-shadow: 0 0 10px var(--whiteColor);
+}
+
+
+
+.log h1 {
+    padding: 20px 50px;
+    border-bottom: 1px solid var(--lightBabyBlueColor);
+    color: var(--whiteColor);
+    text-shadow: 0 0 10px var(--darkColor);
+
+}
+
+form {
+    width: 60%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.small {
+    margin-right: 60%;
+    font-size: 12px;
+    color: var(--grayColor);
+    line-height: 0px;
+}
+
+@media(max-width:1200px) {
+
+    form .small {
+        margin-right: 0%;
+    }
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid var(--babyBlueColor);
+
+}
+
+form .logLink {
+    width: 100%;
+    background-color: var(--babyBlueColor);
+    letter-spacing: 3px;
+    color: var(--whiteColor);
+    transition: 0.3s;
+}
+
+form .logLink:hover {
+    background-color: var(--lightBabyBlueColor);
+    color: var(--whiteColor);
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <div class="container-log container d-flex justify-content-center flex-column align-items-center">
+        <div class="log">
+            <h1>Welcome</h1>
+            <h2 class="login pt-5">Login</h2>
+            <form action="" method="post" class="form d-flex gap-3 align-items-center justify-content-center flex-column">
+                <input type="text" class="form-control" id="inpUser" placeholder="Username">
+                <small class="text-secondary small">Example Username : admin</small>
+                <input type="password" id="inpPassword" class="form-control" placeholder="Password">
+                <small class="text-secondary small">Example Password : admin</small>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="showPassword">
+                    <label class="form-check-label" for="showPassword">Show Password</label>
+                </div>
+
+                <a href="#" class="text-decoration-none">Forget Password</a>
+                <button id="logButton" class="logLink btn py-2">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/login.js" ></script>
+</body>
+</html>
